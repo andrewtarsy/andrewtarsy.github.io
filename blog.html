@@ -7,7 +7,6 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
-  <script src="posts.js"></script>
   <style>
     :root{--crimson:#7a1a1a;--crimson-light:#9b2626;--cream:#f5f0e8;--cream-dark:#ede8de;--charcoal:#2c2c2c;--gray:#6b6b6b}
     *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
@@ -77,6 +76,7 @@
   </nav>
   <div class="page-wrap" id="page-wrap"></div>
   <footer><a href="/">emblemstrategic.com</a> &nbsp;&middot;&nbsp; &copy; 2026 Emblem Strategic LLC</footer>
+  <script src="posts.js"></script>
   <script>
     function getSlug(){var p=new URLSearchParams(window.location.search);return p.get('post');}
     function navigateToPost(slug){var url=new URL(window.location);url.searchParams.set('post',slug);window.history.pushState({slug},'',url);renderPage();}
@@ -97,7 +97,7 @@
       wrap.innerHTML='<div class="post-view"><a class="post-back" href="/blog.html" onclick="event.preventDefault();navigateToIndex()">Back to Perspectives</a><div class="post-header"><div class="post-meta"><span class="post-date">'+post.dateDisplay+'</span><span class="post-read">'+post.readTime+'</span><div class="post-tags">'+post.tags.map(function(t){return '<span class="post-tag" style="cursor:pointer" onclick="navigateToIndex(''+t.replace(/'/g,"\'")+'')">'+ t+'</span>';}).join('')+'</div></div><h1 class="post-title">'+post.title+'</h1></div><div class="post-body">'+post.body+'</div>'+(post.byline?'<div class="post-byline">'+post.byline+'</div>':'')+'</div>';
       window.scrollTo(0,0);
     }
-    renderPage();
+    if(document.readyState === "loading") { document.addEventListener("DOMContentLoaded", renderPage); } else { renderPage(); }
   </script>
 </body>
 </html>
