@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Perspectives — Emblem Strategic</title>
+  <title>Perspectives - Emblem Strategic</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
@@ -34,15 +34,13 @@
     .post-card-date{font-family:'Montserrat',sans-serif;font-size:.68rem;letter-spacing:.1em;text-transform:uppercase;color:var(--crimson-light)}
     .post-card-read{font-family:'Montserrat',sans-serif;font-size:.68rem;letter-spacing:.08em;text-transform:uppercase;color:var(--gray)}
     .post-card-tags{display:flex;gap:.4rem;flex-wrap:wrap}
-    .post-tag{font-family:'Montserrat',sans-serif;font-size:.6rem;letter-spacing:.07em;text-transform:uppercase;padding:.2rem .55rem;border:1px solid var(--cream-dark);color:var(--gray);border-radius:2px}
+    .post-tag{font-family:'Montserrat',sans-serif;font-size:.6rem;letter-spacing:.07em;text-transform:uppercase;padding:.2rem .55rem;border:1px solid var(--cream-dark);color:var(--gray);border-radius:2px;cursor:pointer}
+    .post-tag:hover{border-color:var(--crimson);color:var(--crimson)}
     .post-card-title{font-size:clamp(1.3rem,2.5vw,1.75rem);font-weight:500;line-height:1.3;color:var(--charcoal);margin-bottom:.85rem}
     .post-card-excerpt{font-size:1.05rem;line-height:1.7;color:var(--gray);font-style:italic;margin-bottom:1rem}
     .post-card-readmore{font-family:'Montserrat',sans-serif;font-size:.68rem;letter-spacing:.12em;text-transform:uppercase;color:var(--crimson);text-decoration:none}
-    .post-card-readmore::after{content:' →'}
-    .no-results{padding:3rem 0;color:var(--gray);font-style:italic;font-size:1.1rem}
     .post-view{max-width:760px;margin:0 auto;padding:4rem 2rem 6rem}
     .post-back{font-family:'Montserrat',sans-serif;font-size:.68rem;letter-spacing:.12em;text-transform:uppercase;color:var(--crimson);text-decoration:none;display:inline-flex;align-items:center;gap:.4rem;margin-bottom:3rem}
-    .post-back::before{content:'←'}
     .post-header{margin-bottom:3rem;border-bottom:1px solid var(--cream-dark);padding-bottom:2.5rem}
     .post-meta{display:flex;align-items:center;gap:1.25rem;margin-bottom:1.25rem;flex-wrap:wrap}
     .post-date{font-family:'Montserrat',sans-serif;font-size:.68rem;letter-spacing:.1em;text-transform:uppercase;color:var(--crimson-light)}
@@ -53,7 +51,6 @@
     .post-byline{margin-top:3rem;padding-top:2rem;border-top:1px solid var(--cream-dark);font-style:italic;color:var(--crimson);font-size:1rem;line-height:1.6}
     footer{background:var(--charcoal);color:rgba(255,255,255,.5);text-align:center;padding:2rem;font-family:'Montserrat',sans-serif;font-size:.7rem;letter-spacing:.08em}
     footer a{color:rgba(255,255,255,.7);text-decoration:none}
-    footer a:hover{color:white}
     @media(max-width:640px){nav{padding:0 1rem}.nav-links{display:none}.blog-index,.post-view{padding:2.5rem 1.25rem 4rem}}
   </style>
 </head>
@@ -76,28 +73,7 @@
   </nav>
   <div class="page-wrap" id="page-wrap"></div>
   <footer><a href="/">emblemstrategic.com</a> &nbsp;&middot;&nbsp; &copy; 2026 Emblem Strategic LLC</footer>
-  <script src="posts.js"></script>
-  <script>
-    function getSlug(){var p=new URLSearchParams(window.location.search);return p.get('post');}
-    function navigateToPost(slug){var url=new URL(window.location);url.searchParams.set('post',slug);window.history.pushState({slug},'',url);renderPage();}
-    function navigateToIndex(tag){var url=new URL(window.location);url.searchParams.delete('post');if(tag)url.searchParams.set('tag',tag);else url.searchParams.delete('tag');window.history.pushState({tag},'',url);renderPage();}
-    window.addEventListener('popstate',renderPage);
-    function renderPage(){var slug=getSlug();var wrap=document.getElementById('page-wrap');if(slug){var post=EMBLEM_POSTS.find(function(p){return p.slug===slug;});if(post){renderPost(post,wrap);return;}}renderIndex(wrap);}
-    function renderIndex(wrap){
-      var params=new URLSearchParams(window.location.search);
-      var activeTag=params.get('tag')||'';
-      document.title='Perspectives — Emblem Strategic';
-      var allTags=[...new Set(EMBLEM_POSTS.flatMap(function(p){return p.tags;}))].sort();
-      var posts=activeTag?EMBLEM_POSTS.filter(function(p){return p.tags.includes(activeTag);}):EMBLEM_POSTS;
-      var sorted=[...posts].sort(function(a,b){return b.date.localeCompare(a.date);});
-      wrap.innerHTML='<div class="blog-index"><div class="blog-index-header"><div class="blog-index-label">From the Field</div><h1 class="blog-index-title">Perspectives</h1><p class="blog-index-desc">Thinking on stakeholder strategy, civic leadership, and the work of building trust across difference.</p></div><div class="tag-filter"><span class="tag-filter-label">Filter:</span><button class="tag-btn '+((!activeTag)?'active':'')+'" onclick="navigateToIndex('')">All</button>'+allTags.map(function(tag){return '<button class="tag-btn '+(activeTag===tag?'active':'')+'" onclick="navigateToIndex(''+tag.replace(/'/g,"\'")+'')">'+ tag+'</button>';}).join('')+'</div>'+(sorted.length===0?'<div class="no-results">No posts found.</div>':'')+sorted.map(function(post){return '<div class="post-card" onclick="navigateToPost(''+post.slug+'')"><div class="post-card-meta"><span class="post-card-date">'+post.dateDisplay+'</span><span class="post-card-read">'+post.readTime+'</span><div class="post-card-tags">'+post.tags.map(function(t){return '<span class="post-tag">'+t+'</span>';}).join('')+'</div></div><h2 class="post-card-title">'+post.title+'</h2><p class="post-card-excerpt">'+post.excerpt+'</p><a class="post-card-readmore" onclick="event.stopPropagation();navigateToPost(''+post.slug+'')">Read more</a></div>';}).join('')+'</div>';
-    }
-    function renderPost(post,wrap){
-      document.title=post.title+' — Emblem Strategic';
-      wrap.innerHTML='<div class="post-view"><a class="post-back" href="/blog.html" onclick="event.preventDefault();navigateToIndex()">Back to Perspectives</a><div class="post-header"><div class="post-meta"><span class="post-date">'+post.dateDisplay+'</span><span class="post-read">'+post.readTime+'</span><div class="post-tags">'+post.tags.map(function(t){return '<span class="post-tag" style="cursor:pointer" onclick="navigateToIndex(''+t.replace(/'/g,"\'")+'')">'+ t+'</span>';}).join('')+'</div></div><h1 class="post-title">'+post.title+'</h1></div><div class="post-body">'+post.body+'</div>'+(post.byline?'<div class="post-byline">'+post.byline+'</div>':'')+'</div>';
-      window.scrollTo(0,0);
-    }
-    if(document.readyState === "loading") { document.addEventListener("DOMContentLoaded", renderPage); } else { renderPage(); }
-  </script>
+  <script src="/posts.js"></script>
+  <script src="/blog.js"></script>
 </body>
 </html>
