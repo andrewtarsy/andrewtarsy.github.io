@@ -77,7 +77,7 @@
   }
 
   function renderIndex(wrap) {
-    document.title = 'Perspectives - Emblem Strategic';
+    document.title = 'Emblematic - Emblem Strategic';
     var activeTag = getTag();
     var posts = EMBLEM_POSTS.filter(function (p) {
       return !activeTag || p.tags.indexOf(activeTag) !== -1;
