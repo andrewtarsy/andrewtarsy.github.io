@@ -77,7 +77,16 @@
     footer{background:var(--charcoal);color:rgba(255,255,255,.5);text-align:center;padding:2rem;font-family:'Montserrat',sans-serif;font-size:.7rem;letter-spacing:.08em}
     footer a{color:rgba(255,255,255,.7);text-decoration:none}
     @media(max-width:640px){nav{padding:0 1rem}.nav-links{display:none}.blog-hero,.tag-bar-inner,.blog-index,.post-view{padding-left:1.25rem;padding-right:1.25rem}}
-  </style>
+      @media(max-width:600px){
+      .post-title{font-size:1.6rem;}
+      .post-body p{font-size:1rem;}
+      .post-view{padding:2rem 1.25rem 4rem;}
+      .blog-hero{padding-top:5rem;}
+      .blog-hero h1{font-size:1.8rem;}
+      .post-card-title{font-size:1.15rem;}
+      .tag-bar-inner{flex-wrap:wrap;gap:.5rem;}
+    }
+</style>
 </head>
 <body>
   <nav>
@@ -92,6 +101,7 @@
       <li><a href="/#engagements">Engagements</a></li>
       <li><a href="/blog.html" class="active">Blog</a></li>
       <li><a href="/#network">Emblem Network</a></li>
+      
       <li><a href="/#contact">Contact</a></li>
     </ul>
   </nav>
