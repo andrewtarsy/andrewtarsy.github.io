@@ -599,7 +599,28 @@
     .blog-post-body p { font-family: 'Cormorant Garamond', serif; font-size: clamp(1rem, 1.5vw, 1.15rem); line-height: 1.75; color: var(--charcoal); margin-bottom: 1.25rem; }
     .blog-post-byline { font-style: italic; color: var(--crimson); margin-top: 2rem; }
 
-  </style>
+  
+  /* —— MOBILE (max-width: 600px) —— */
+  @media (max-width: 600px) {
+    body { font-size: 17px; }
+    #home { padding: 90px 20px 48px; min-height: auto; }
+    .section-inner { padding: 40px 20px; }
+    h1 { font-size: 2rem; line-height: 1.25; }
+    h2 { font-size: 1.6rem; }
+    h3 { font-size: 1.2rem; }
+    .hero-eyebrow { font-size: 9px; }
+    .hero-rule { margin: 28px auto; }
+    .hero-orienting-intro { font-size: 1rem; }
+    .thing-item { font-size: 1rem; }
+    .hero-cta { margin-top: 28px; }
+    .who-card { padding: 32px 20px; }
+    .andy-aside-name { font-size: 1.4rem; }
+    .andy-bio p { font-size: 1rem; }
+    .engagement-item { grid-template-columns: 32px 1fr; gap: 16px; padding: 24px 0; }
+    nav { padding: 0 16px; }
+    .section-label { font-size: 9px; }
+  }
+</style>
 
   <!-- Open Graph / LinkedIn / Twitter Card -->
   <meta property="og:type" content="website">
