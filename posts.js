@@ -1,7 +1,7 @@
 const EMBLEM_POSTS = [
   {
     slug: "landing-the-top-job-nonprofit-executive-search",
-    title: "What It Takes to Land the Top Job: A Coach’s Perspective on Nonprofit Executive Search",
+    title: "What It Takes to Land the Top Job: Coaching and Connecting for Leaders on the Move",
     date: "2026-04-18",
     dateDisplay: "April 18, 2026",
     readTime: "4 min read",
