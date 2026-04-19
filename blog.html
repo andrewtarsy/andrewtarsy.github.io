@@ -7,7 +7,7 @@
   <meta property="og:type" content="article">
   <meta property="og:url" content="https://emblemstrategic.com/blog.html">
   <meta property="og:site_name" content="Emblem Strategic">
-  <meta property="og:title" content="Emblematic - Emblem Strategic">
+  <meta property="og:title" content="Emblematic — Emblem Strategic">
   <meta property="og:description" content="The picture emerging from this spring&#39;s corporate citizenship reporting season is much more complicated than the headlines suggest. New data from Benevity and The Conference Board points the way forward.">
   <meta property="og:image" content="https://emblemstrategic.com/og-image.png">
   <meta property="og:image:width" content="1200">
@@ -15,7 +15,7 @@
   <meta property="og:image:type" content="image/png">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Corporate Citizenship Still Counts &#8212; Emblem Strategic">
-  <meta name="twitter:description" content="New data from Benevity and The Conference Board shows corporate citizenship budgets are holding and the field is ready for reimagining.">
+  <meta name="twitter:description" content="Insight and perspective from Andy Tarsy and Emblem Strategic on stakeholder strategy, civic leadership, and executive transition.">
   <meta name="twitter:image" content="https://emblemstrategic.com/og-image.png">
   <title>Emblematic - Emblem Strategic</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -91,6 +91,23 @@
       .post-header{padding-bottom:1.5rem;margin-bottom:1.5rem;}
     }
 </style>
+
+  <script>
+    (function(){
+      var slug = new URLSearchParams(window.location.search).get('post');
+      if(!slug) return;
+      function setMeta(attr,val,content){var el=document.querySelector('meta['+attr+'="'+val+'"]');if(el)el.setAttribute('content',content);}
+      var posts={'landing-the-top-job-nonprofit-executive-search':{title:'What It Takes to Land the Top Job: Coaching and Connecting for Leaders on the Move',excerpt:'The market for nonprofit executive leadership has never been more active or more complicated. CEO searches that used to take three months now take six.'},'corporate-citizenship-still-counts':{title:'Corporate Citizenship Still Counts. New Data Says All Parties Working Together Can Increase Impact.',excerpt:'The headlines say corporate America is retreating from its commitments. The picture emerging from this spring\'s corporate citizenship reporting season is much more complicated than that.'}};
+      var post=posts[slug];
+      if(!post) return;
+      setMeta('property','og:title',post.title+' — Emblem Strategic');
+      setMeta('property','og:description',post.excerpt);
+      setMeta('property','og:url','https://emblemstrategic.com/blog.html?post='+slug);
+      setMeta('name','twitter:title',post.title+' — Emblem Strategic');
+      setMeta('name','twitter:description',post.excerpt);
+      document.title=post.title+' — Emblematic';
+    })();
+  </script>
 </head>
 <body>
   <nav>
