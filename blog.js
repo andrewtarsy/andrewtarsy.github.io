@@ -145,7 +145,7 @@
     body.innerHTML = post.body;
     outer.appendChild(body);
 
-    if (post.byline) { outer.appendChild(txt('div', 'post-byline', post.byline)); }
+    
     wrap.appendChild(outer);
     window.scrollTo(0, 0);
   }
