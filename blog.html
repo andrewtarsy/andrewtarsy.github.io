@@ -7,7 +7,7 @@
   <meta property="og:type" content="article">
   <meta property="og:url" content="https://emblemstrategic.com/blog.html">
   <meta property="og:site_name" content="Emblem Strategic">
-  <meta property="og:title" content="Emblematic — Emblem Strategic">
+  <meta property="og:title" content="Emblematic â Emblem Strategic">
   <meta property="og:description" content="The picture emerging from this spring&#39;s corporate citizenship reporting season is much more complicated than the headlines suggest. New data from Benevity and The Conference Board points the way forward.">
   <meta property="og:image" content="https://emblemstrategic.com/og-image.png">
   <meta property="og:image:width" content="1200">
@@ -33,14 +33,14 @@
     .nav-links a:hover,.nav-links a.active{color:var(--crimson)}
     .page-wrap{padding-top:64px;min-height:100vh}
 
-    /* ── BLOG HERO BAND ─────────────────────────────────── */
+    /* ââ BLOG HERO BAND âââââââââââââââââââââââââââââââââââ */
     .blog-hero{background:var(--crimson);padding:2.5rem 2rem 2rem;color:rgba(255,255,255,.9)}
     .blog-hero-inner{max-width:860px;margin:0 auto}
     .blog-hero-label{font-family:'Montserrat',sans-serif;font-size:.65rem;letter-spacing:.2em;text-transform:uppercase;color:rgba(255,255,255,.55);margin-bottom:.6rem}
     .blog-hero-title{font-family:'Cormorant Garamond',serif;font-size:clamp(2rem,4vw,3.25rem);font-weight:300;color:white;line-height:1.15;margin-bottom:.5rem}
     .blog-hero-desc{font-size:1rem;font-style:italic;color:rgba(255,255,255,.7);line-height:1.6}
 
-    /* ── TAG FILTER BAR ────────────────────────────────── */
+    /* ââ TAG FILTER BAR ââââââââââââââââââââââââââââââââââ */
     .tag-bar{background:var(--cream-dark);border-bottom:1px solid rgba(0,0,0,.07)}
     .tag-bar-inner{max-width:860px;margin:0 auto;padding:.75rem 2rem;display:flex;flex-wrap:wrap;gap:.5rem;align-items:center}
     .tag-bar-label{font-family:'Montserrat',sans-serif;font-size:.62rem;letter-spacing:.1em;text-transform:uppercase;color:var(--gray);margin-right:.25rem}
@@ -48,7 +48,7 @@
     .tag-btn:hover{border-color:var(--crimson);color:var(--crimson)}
     .tag-btn.active{background:var(--crimson);border-color:var(--crimson);color:white}
 
-    /* ── POST LIST ─────────────────────────────────────── */
+    /* ââ POST LIST âââââââââââââââââââââââââââââââââââââââ */
     .blog-index{max-width:860px;margin:0 auto;padding:0 2rem 4rem}
     .post-card{border-bottom:1px solid var(--cream-dark);padding:1.75rem 0;cursor:pointer;transition:opacity .2s}
     .post-card:first-child{padding-top:1.75rem}
@@ -63,7 +63,7 @@
     .post-card-excerpt{font-size:1.05rem;line-height:1.7;color:var(--gray);font-style:italic;margin-bottom:.9rem}
     .post-card-readmore{font-family:'Montserrat',sans-serif;font-size:.65rem;letter-spacing:.12em;text-transform:uppercase;color:var(--crimson);text-decoration:none}
 
-    /* ── SINGLE POST ───────────────────────────────────── */
+    /* ââ SINGLE POST âââââââââââââââââââââââââââââââââââââ */
     .post-view{max-width:760px;margin:0 auto;padding:3rem 2rem 6rem}
     .post-back{font-family:'Montserrat',sans-serif;font-size:.68rem;letter-spacing:.12em;text-transform:uppercase;color:var(--crimson);text-decoration:none;display:inline-flex;align-items:center;gap:.4rem;margin-bottom:2.5rem}
     .post-header{margin-bottom:2.5rem;border-bottom:1px solid var(--cream-dark);padding-bottom:2rem}
@@ -90,7 +90,14 @@
       .tag-bar-inner{flex-wrap:wrap;gap:.5rem;}
       .post-header{padding-bottom:1.5rem;margin-bottom:1.5rem;}
     }
-</style>
+
+    /* ── Reprint styles ──────────────────────────────────────── */
+    .editors-note{font-size:.95rem;color:#6b5f5f;border-left:3px solid var(--crimson);padding:.75rem 1.25rem;margin-bottom:2.5rem;line-height:1.8;font-style:italic}
+    .editors-note a{color:var(--crimson);text-decoration:underline;text-underline-offset:2px}
+    .byline{font-size:.9rem;color:#6b5f5f;margin-top:3rem;padding-top:1.5rem;border-top:1px solid var(--cream-dark);line-height:1.8;font-style:italic}
+    .republication-notice{font-size:.8rem;color:#9a8f8f;margin-top:1rem;line-height:1.6;font-style:italic}
+    .republication-notice a{color:var(--crimson);text-decoration:underline;text-underline-offset:2px}
+    </style>
 
   <script>
     (function(){
@@ -100,12 +107,12 @@
       var posts={'landing-the-top-job-nonprofit-executive-search':{title:'What It Takes to Land the Top Job: Coaching and Connecting for Leaders on the Move',excerpt:'The market for nonprofit executive leadership has never been more active or more complicated. CEO searches that used to take three months now take six.'},'corporate-citizenship-still-counts':{title:'Corporate Citizenship Still Counts. New Data Says All Parties Working Together Can Increase Impact.',excerpt:'The headlines say corporate America is retreating from its commitments. The picture emerging from this spring\'s corporate citizenship reporting season is much more complicated than that.'}};
       var post=posts[slug];
       if(!post) return;
-      setMeta('property','og:title',post.title+' — Emblem Strategic');
+      setMeta('property','og:title',post.title+' â Emblem Strategic');
       setMeta('property','og:description',post.excerpt);
       setMeta('property','og:url','https://emblemstrategic.com/blog.html?post='+slug);
-      setMeta('name','twitter:title',post.title+' — Emblem Strategic');
+      setMeta('name','twitter:title',post.title+' â Emblem Strategic');
       setMeta('name','twitter:description',post.excerpt);
-      document.title=post.title+' — Emblematic';
+      document.title=post.title+' â Emblematic';
     })();
   </script>
 </head>
