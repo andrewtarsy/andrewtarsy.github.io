@@ -202,8 +202,8 @@ const EMBLEM_POSTS = [
   {
     slug: "leadership-with-impact-alphabet-soup-of-social-responsibility",
     title: "Leadership with Impact: How to Spell Success in the Alphabet Soup of Social Responsibility",
-    date: "2022-09-06",
-    dateDisplay: "September 6, 2022",
+    date: "2023-09-06",
+    dateDisplay: "September 6, 2023",
     readTime: "4 min read",
     tags: ["Leadership", "Stakeholder Strategy", "Corporate Citizenship", "DEI"],
     excerpt: "You could drown in the alphabet soup of acronyms we use to track and signal that we are doing the right thing. ESG. CSR. DEI. Before you roll your eyes or pass this on to somebody else, know that you can actually spell success with these letters.",
