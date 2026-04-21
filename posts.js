@@ -198,5 +198,35 @@ const EMBLEM_POSTS = [
 <p>A few personal starting points that I am exploring: Campaigns full of action steps offered by Counterspark, books to read with my kids like the Climate Emergency Atlas. And we are exploring solar power and composting at home this year.</p>
 
 <p>Thank you for reading and sharing the ideas this brilliant group of colleagues has offered here. What is your one big thing? Can we work on it together?</p>`
+  },
+  {
+    slug: "leadership-with-impact-alphabet-soup-of-social-responsibility",
+    title: "Leadership with Impact: How to Spell Success in the Alphabet Soup of Social Responsibility",
+    date: "2022-09-06",
+    dateDisplay: "September 6, 2022",
+    readTime: "4 min read",
+    tags: ["Leadership", "Stakeholder Strategy", "Corporate Citizenship", "DEI"],
+    excerpt: "You could drown in the alphabet soup of acronyms we use to track and signal that we are doing the right thing. ESG. CSR. DEI. Before you roll your eyes or pass this on to somebody else, know that you can actually spell success with these letters.",
+    body: `<p>You could drown in the alphabet soup of acronyms that we use today to track and signal that we are doing the right thing. ESG. CSR. DEI. The alphabet soup is helping us make the issues more visible and better organized, while also bringing key concepts to the surface. Before you roll your eyes, shrug your shoulders or pass this on to somebody else on the team, know that you can actually spell success with these letters. And it is hard. But it's easier than you think. Here's a quick window into how it can be done:</p>
+
+<ol>
+<li><p><strong>Start with a statement of why.</strong> Why does doing the right thing matter for your business, college or organization? Are there particular stakeholders holding you to new or emerging standards? Government regulators? Employees? Students? Customers? Investors? Communities where you operate? To understand them, you need to have a professional and polished way of asking good questions — while making sure you don't raise expectations while you are just getting organized. Is this something your team knows how to do on its own or would some credible help from outside make a difference?</p></li>
+
+<li><p><strong>Build a complete map of your stakeholders.</strong> What is important to them about you and what you do? And don't forget — your stakeholder map is "Garbage in, garbage out." If you don't collect the information carefully and with the right nuance and specifics, the resulting map won't show you the way to anywhere in particular.</p></li>
+
+<li><p><strong>Baseline your operation</strong> against the key issues or topics that emerge from the first two steps. Is it about energy and environment or climate impact? Gender equity? Racial justice? Land use? Whatever the topic, where are you today? Department by department, unit by unit, region by region.</p></li>
+
+<li><p><strong>Set benchmarks.</strong> Quite simply: where do you think you should be and by when? Based on your own internally derived ambitions, or by taking into account the expectations of stakeholders, or even keying off of what you know about your competition — set benchmarks with timelines.</p></li>
+
+<li><p><strong>Build action plans.</strong> You need action plans in each of the relevant areas of your business. A good action plan lays out what you are going to do to get from your baseline to your benchmark, and identifies the resources you will need to get it done. A bad action plan is literally anything else.</p></li>
+
+<li><p><strong>Track and report.</strong> When you track your action plans against timelines and progress reports in the same way you track and report on other business variables, your stakeholders take you seriously. When you don't — they don't. It is that simple.</p></li>
+</ol>
+
+<p>There will always be buzzwords and acronyms and there will always be hyperbole about the role they play in your organization. There will also always be cynical executive leaders who disregard the sincere significance of changing expectations over time — and you do not want to be one of them. Whether it is corporate social responsibility (CSR) or a focus on measuring your impact in terms of Economic, Social and Governance (ESG) activities, the question is really the same: are you meeting the expectations of your stakeholders or are you not? And if you are not, do you have a persuasive explanation of what is blocking you and a plan for getting the job done?</p>
+
+<p>As a leader, you might be excited about this world of "alternative" metrics or frustrated that this seems like new rules in an old game. Maybe even cynical or downright opposed to it all. Regardless, the world is looking at your license to operate differently, and trying to measure risks and externalities in new ways. It happens in every generation. There is no upside in tuning it out.</p>
+
+<p>You need specialized help with coaching, planning and even convening the stakeholders to get into the right relationships with them around data and possibility. Whatever you do — avoid the pitfall of a self-diagnosis. It is like when your doctor asks you to "say what hurts" rather than "what do you think is wrong with you?" If you are in conversation with the right expert partners, you get the benefit of learning from the mistakes everyone else has been making on this topic for years. And you get a chance to put the letters in the right order in this alphabet soup. Anything less will cost you time and money you cannot afford to waste.</p>`
   }
 ];
