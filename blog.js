@@ -9,10 +9,12 @@
          'landing-the-top-job-nonprofit-executive-search': 'landing-the-top-job.html',
          'corporate-citizenship-still-counts': 'corporate-citizenship.html',
          'weworks-boston-diversity-success-story': 'weworks-boston-diversity-success-story.html'
+           'ai-fatigue-hot-takes': 'ai-fatigue.html'
    };
     var fileToSlug = {
           'landing-the-top-job.html': 'landing-the-top-job-nonprofit-executive-search',
           'corporate-citizenship.html': 'corporate-citizenship-still-counts',
+            'ai-fatigue.html': 'ai-fatigue-hot-takes'
           'weworks-boston-diversity-success-story.html': 'weworks-boston-diversity-success-story'
     };
 
