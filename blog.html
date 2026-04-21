@@ -114,23 +114,33 @@
     
     
     /* ── Blockquote attribution ── */
+    .post-body blockquote {
+      border-left: 3px solid var(--crimson);
+      padding: 1rem 1.25rem 1rem 1.5rem;
+      margin: 2rem 0;
+    }
+    .post-body blockquote p:first-child {
+      font-size: clamp(.95rem, 1.3vw, 1.05rem);
+      line-height: 1.75;
+      font-style: italic;
+      color: var(--charcoal);
+      margin-bottom: .5rem;
+    }
     .post-body blockquote p:last-child {
       font-family: 'Montserrat', sans-serif;
-      font-size: .78rem;
+      font-size: .72rem;
       font-weight: 600;
-      letter-spacing: .06em;
+      letter-spacing: .08em;
       text-transform: uppercase;
       color: var(--crimson);
       font-style: normal;
-      margin-top: .75rem;
-      margin-bottom: 0;
-      padding-top: .75rem;
-      border-top: 1px solid var(--cream-dark);
-      line-height: 1.5;
+      margin: 0;
+      padding: 0;
+      border: none;
+      line-height: 1.4;
     }
     .post-body blockquote p:last-child::before {
-      content: '— ';
-      color: var(--gray);
+      content: '— ';
     }
     </style>
 
