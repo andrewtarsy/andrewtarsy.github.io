@@ -11,7 +11,7 @@ const EMBLEM_POSTS = [
   },
   {
     slug: "corporate-citizenship-still-counts",
-    title: "Corporate Citizenship Still Counts. New Data Says All Parties Working Together Can Increase Impact.",
+    title: "Corporate Citizenship Still Counts: New Data Says All Parties Working Together Can Increase Impact",
     date: "2026-04-07",
     dateDisplay: "April 7, 2026",
     readTime: "4 min read",
