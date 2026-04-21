@@ -116,15 +116,13 @@
     /* ── Blockquote attribution ── */
     .post-body blockquote {
       border-left: 3px solid var(--crimson);
-      padding: 1rem 1.25rem 1rem 1.5rem;
+      padding: 1rem 1.25rem 1rem 1.5rem !important;
       margin: 2rem 0;
+      background: rgba(122,26,26,.03);
     }
     .post-body blockquote p:first-child {
-      font-size: clamp(.95rem, 1.3vw, 1.05rem);
-      line-height: 1.75;
       font-style: italic;
-      color: var(--charcoal);
-      margin-bottom: .5rem;
+      margin-bottom: .75rem;
     }
     .post-body blockquote p:last-child {
       font-family: 'Montserrat', sans-serif;
@@ -134,13 +132,11 @@
       text-transform: uppercase;
       color: var(--crimson);
       font-style: normal;
-      margin: 0;
-      padding: 0;
-      border: none;
-      line-height: 1.4;
+      margin-bottom: 0;
     }
     .post-body blockquote p:last-child::before {
-      content: '— ';
+      content: '— ';
+      color: var(--gray);
     }
     </style>
 
