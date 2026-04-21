@@ -112,6 +112,25 @@
     .republication-notice{font-size:.8rem;color:#9a8f8f;margin-top:1rem;line-height:1.6;font-style:italic}
     .republication-notice a{color:var(--crimson);text-decoration:underline;text-underline-offset:2px}
     
+    
+    /* ── Blockquote attribution ── */
+    .post-body blockquote p:last-child {
+      font-family: 'Montserrat', sans-serif;
+      font-size: .78rem;
+      font-weight: 600;
+      letter-spacing: .06em;
+      text-transform: uppercase;
+      color: var(--crimson);
+      font-style: normal;
+      margin-top: .75rem;
+      margin-bottom: 0;
+      padding-top: .75rem;
+      border-top: 1px solid var(--cream-dark);
+    }
+    .post-body blockquote p:last-child::before {
+      content: '— ';
+      color: var(--gray);
+    }
     </style>
 
   <script>
