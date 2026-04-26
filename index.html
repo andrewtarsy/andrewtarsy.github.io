@@ -927,6 +927,8 @@ coaching.html    color: var(--warm-gray);
   // Fade-up on scroll
   if ('IntersectionObserver' in window) {
     document.body.classList.add('js-ready');
+    // Fallback: immediately show elements already in viewport
+    setTimeout(() => { document.querySelectorAll('.fade-up').forEach(el => { const r = el.getBoundingClientRect(); if (r.top < window.innerHeight) el.classList.add('visible'); }); }, 50);
     const fadeEls = document.querySelectorAll('.fade-up');
     const observer = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
