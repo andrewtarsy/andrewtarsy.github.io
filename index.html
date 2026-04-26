@@ -129,11 +129,13 @@
     display: none;
     position: fixed;
     inset: 0;
-    background: rgba(28,28,28,.65);
+    background: rgba(28,28,28,.82);
+    -webkit-backdrop-filter: blur(4px);
     backdrop-filter: blur(4px);
     z-index: 200;
     align-items: center;
     justify-content: center;
+    overflow: hidden;
   }
   .modal-overlay.open { display: flex; }
   .modal-box {
