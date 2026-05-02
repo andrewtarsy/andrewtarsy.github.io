@@ -250,3 +250,4 @@ const EMBLEM_POSTS = [
 <p>You need specialized help with coaching, planning and even convening the stakeholders to get into the right relationships with them around data and possibility. Whatever you do — avoid the pitfall of a self-diagnosis. It is like when your doctor asks you to "say what hurts" rather than "what do you think is wrong with you?" If you are in conversation with the right expert partners, you get the benefit of learning from the mistakes everyone else has been making on this topic for years. And you get a chance to put the letters in the right order in this alphabet soup. Anything less will cost you time and money you cannot afford to waste.</p>`
   }
 ];
+/* cache bust Sat May  2 02:27:45 UTC 2026 */
