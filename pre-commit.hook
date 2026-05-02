@@ -1,0 +1,18 @@
+#!/bin/sh
+# Pre-commit hook: validate posts.js and blog.js syntax before commit
+
+echo "Validating JS syntax..."
+
+for f in posts.js blog.js; do
+  if [ -f "$f" ]; then
+    node --check "$f" 2>&1
+    if [ $? -ne 0 ]; then
+      echo "ERROR: $f has a syntax error. Commit blocked."
+      exit 1
+    fi
+    echo "  ✓ $f OK"
+  fi
+done
+
+echo "All files valid. Proceeding with commit."
+exit 0
