@@ -53,7 +53,7 @@
     var slug = getSlug();
     var wrap = document.getElementById('page-wrap');
     var hero = document.getElementById('blog-hero');
-    var tagBar = document.getElementById('tag-bar');
+    var tagBar = document.getElementById('blog-sidebar');
     if (!wrap) return;
     if (slug) {
       var post = null;
@@ -80,13 +80,13 @@
     EMBLEM_POSTS.forEach(function (p) { p.tags.forEach(function (t) { tagMap[t] = true; }); });
     var allTags = Object.keys(tagMap).sort();
     bar.innerHTML = '';
-    var inner = el('div', 'tag-bar-inner');
-    inner.appendChild(txt('span', 'tag-bar-label', 'Filter:'));
-    var allBtn = txt('button', 'tag-btn' + (!activeTag ? ' active' : ''), 'All');
+    var inner = el('div', 'sidebar-inner');
+    inner.appendChild(txt('h3', 'sidebar-heading', 'Topics'));
+    var allBtn = txt('button', 'sidebar-tag' + (!activeTag ? ' active' : ''), 'All');
     allBtn.onclick = function () { window.navigateToIndex(null); };
     inner.appendChild(allBtn);
     allTags.forEach(function (tag) {
-      var b = txt('button', 'tag-btn' + (activeTag === tag ? ' active' : ''), tag);
+      var b = txt('button', 'sidebar-tag' + (activeTag === tag ? ' active' : ''), tag);
       b.onclick = function () { window.navigateToIndex(tag); };
       inner.appendChild(b);
     });
