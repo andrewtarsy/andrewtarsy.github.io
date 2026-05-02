@@ -72,7 +72,8 @@
     .post-read{font-family:'Montserrat',sans-serif;font-size:.68rem;letter-spacing:.08em;text-transform:uppercase;color:var(--gray)}
     .post-tags{display:flex;gap:.4rem;flex-wrap:wrap}
     .post-title{font-size:clamp(1.75rem,4vw,2.5rem);font-weight:400;line-height:1.25;color:var(--charcoal)}
-    .post-body p{font-size:clamp(1rem,1.5vw,1.15rem);line-height:1.85;color:var(--charcoal);margin-bottom:1.5rem}
+    .post-body p{font-size:clamp(1rem,1.5vw,1.15rem);line-height:1.85;color:var(--charcoal);margin-bottom:1.5rem;overflow-wrap:break-word;word-wrap:break-word}
+    .post-body{overflow-wrap:break-word;word-wrap:break-word}
     .post-body img{width:100%;height:auto;display:block;margin:2rem 0 0.5rem}
     .post-body figcaption{font-family:'Montserrat',sans-serif;font-size:.72rem;letter-spacing:.06em;text-transform:uppercase;color:var(--gray);text-align:center;margin-bottom:2rem}
     .post-body figure{margin:2rem 0}
@@ -95,7 +96,8 @@
       .post-card-title{font-size:1.2rem;font-weight:600;line-height:1.3;}
       .post-card-excerpt{font-family:Georgia,'Times New Roman',serif;font-size:.95rem;line-height:1.7;color:#333;}
       /* Post view */
-      .post-view{padding:2rem 1.25rem 4rem;}
+      .post-view{padding:2rem 1.25rem 4rem;overflow-x:hidden}
+      .post-body{overflow-wrap:break-word;word-wrap:break-word;overflow-x:hidden}
       .post-back{margin-bottom:1.5rem;}
       .post-header{padding-bottom:1.5rem;margin-bottom:1.5rem;}
       .post-title{font-size:1.6rem;font-weight:600;line-height:1.2;}
