@@ -142,7 +142,19 @@
       margin-bottom: 0;
     }
 
-    </style>
+    
+    /* ── Two-column index layout ─────────────────────────────────── */
+    .blog-layout{max-width:1060px;margin:0 auto;padding:3rem 2rem 5rem;display:flex;gap:3rem;align-items:flex-start}
+    .blog-main{flex:1;min-width:0}
+    .blog-sidebar{width:200px;flex-shrink:0;position:sticky;top:84px}
+    .sidebar-heading{font-family:'Montserrat',sans-serif;font-size:.6rem;letter-spacing:.14em;text-transform:uppercase;color:var(--gray);margin-bottom:.85rem}
+    .sidebar-inner{display:flex;flex-direction:column;gap:.25rem}
+    .sidebar-tag{display:block;width:100%;text-align:left;font-family:'Montserrat',sans-serif;font-size:.62rem;letter-spacing:.07em;text-transform:uppercase;padding:.35rem .5rem;border:none;background:none;color:var(--gray);cursor:pointer;border-radius:2px;transition:color .15s,background .15s}
+    .sidebar-tag:hover{color:var(--crimson);background:rgba(122,26,26,.06)}
+    .sidebar-tag.active{color:var(--crimson);font-weight:600;background:rgba(122,26,26,.08)}
+    @media(max-width:680px){.blog-layout{flex-direction:column;padding:2rem 1.25rem 4rem}.blog-sidebar{width:100%;position:static;display:flex;flex-wrap:wrap;gap:.35rem;margin-bottom:1.5rem}.sidebar-inner{flex-direction:row;flex-wrap:wrap;gap:.3rem}.sidebar-heading{width:100%}}
+
+  </style>
 
   <script>
     (function(){
@@ -185,8 +197,11 @@
       <p class="blog-hero-desc">Thinking out loud about leaders turning their vision and values into impact and advantage.</p>
     </div>
   </div>
-  <div class="tag-bar" id="tag-bar"></div>
-  <div class="page-wrap" id="page-wrap"></div>
+  
+  <div class="blog-layout" id="blog-layout">
+    <main class="blog-main" id="page-wrap"></main>
+    <aside class="blog-sidebar" id="blog-sidebar"></aside>
+  </div>
   <footer><a href="/">emblemstrategic.com</a> &nbsp;&middot;&nbsp; &copy; 2026 Emblem Strategic LLC</footer>
   <script src="/posts.js?v=20260502"></script>
   <script src="/blog.js?v=20260502"></script>
