@@ -1,4 +1,4 @@
-const EMBLEM_POSTS = [
+var EMBLEM_POSTS = [
   {
     slug: "art-in-these-times",
     title: "Art in These Times: 8 Hot Takes on Hope and Energy from Leaders in the Art World and Creative Economy",
