@@ -1,6 +1,6 @@
 var EMBLEM_POSTS = [
   {
-    slug: "socap23-speed-of-trust",
+    slug: "socap23-speed-of-trust", 
     title: "SOCAP23 Convenes Leaders in San Francisco at the Speed of Trust: What Might this Mean for Participating Leaders and Their Organizations?",
     date: "2023-10-25",
     dateDisplay: "October 25, 2023",
