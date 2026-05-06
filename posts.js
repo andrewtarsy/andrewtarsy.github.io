@@ -270,7 +270,7 @@ var EMBLEM_POSTS = [
 <p>You need specialized help with coaching, planning and even convening the stakeholders to get into the right relationships with them around data and possibility. Whatever you do â avoid the pitfall of a self-diagnosis. It is like when your doctor asks you to "say what hurts" rather than "what do you think is wrong with you?" If you are in conversation with the right expert partners, you get the benefit of learning from the mistakes everyone else has been making on this topic for years. And you get a chance to put the letters in the right order in this alphabet soup. Anything less will cost you time and money you cannot afford to waste.</p>`
   },
   {
-    slug: "if-your-company-could-be-like-nike",
+    slug: "if-your-company-could-be-like-nike", 
     title: "If Your Company Could Be Like Nike…Would You?",
     date: "2018-09-17",
     dateDisplay: "September 17, 2018",
