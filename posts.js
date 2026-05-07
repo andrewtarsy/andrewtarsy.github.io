@@ -1,4 +1,14 @@
-var EMBLEM_POSTS = [
+var EMBLEM_POSTS = [{
+    slug: "labels-change-priorities-too",
+    title: "Labels Change. Priorities Too. The Work of Business Leaders Doesn't.",
+    date: "2026-05-07",
+    dateDisplay: "May 7, 2026",
+    readTime: "8 min read",
+    tags: ["Corporate Purpose", "Stakeholder Strategy", "Leadership", "ESG"],
+    excerpt: "A business that ignores the expectations of the people it depends on is not managing its business. Andy Tarsy in the Boston Business Journal.",
+    externalUrl: "https://www.bizjournals.com/boston/news/2026/05/07/esg-dei-backlash-why-serious-companies-shouldnt.html",
+    body: ``
+  },
   {
     slug: "socap23-speed-of-trust",
     title: "SOCAP23 Convenes Leaders in San Francisco at the Speed of Trust: What Might this Mean for Participating Leaders and Their Organizations?",
