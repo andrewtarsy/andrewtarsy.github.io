@@ -104,7 +104,7 @@
     if (posts.length === 0) { outer.appendChild(txt('p', '', 'No posts found for this topic.')); }
     posts.forEach(function (post) {
       var card = el('div', 'post-card');
-      card.onclick = function () { if (post.externalUrl) { window.open(post.externalUrl, '_blank'); } else { window.navigateToPost(post.slug); } };
+      card.onclick = function () { window.navigateToPost(post.slug); };
       var meta = el('div', 'post-card-meta');
       meta.appendChild(txt('span', 'post-card-date', post.dateDisplay));
       meta.appendChild(txt('span', 'post-card-read', post.readTime));
@@ -114,10 +114,10 @@
       card.appendChild(meta);
       card.appendChild(txt('h2', 'post-card-title', post.title));
       card.appendChild(txt('p', 'post-card-excerpt', post.excerpt));
-      var file = post.externalUrl || slugToFile[post.slug] || ('blog.html?post=' + post.slug);
+      var file = slugToFile[post.slug] || ('blog.html?post=' + post.slug);
       var rm = txt('a', 'post-card-readmore', 'Read more \u2192');
       rm.href = '/' + file;
-      rm.onclick = function (e) { e.stopPropagation(); e.preventDefault(); if (post.externalUrl) { window.open(post.externalUrl, '_blank'); } else { window.navigateToPost(post.slug); } };
+      rm.onclick = function (e) { e.stopPropagation(); e.preventDefault(); window.navigateToPost(post.slug); };
       card.appendChild(rm);
       outer.appendChild(card);
     });
