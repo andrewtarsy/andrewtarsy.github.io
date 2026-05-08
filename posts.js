@@ -12,6 +12,7 @@ var EMBLEM_POSTS = [{
     slug: 'five-things-nonprofit-leadership-search',
     title: 'Five Things to Focus On in Your Nonprofit Leadership Search',
     date: '2025-09-01',
+    dateDisplay: 'September 1, 2025',
     readTime: '3 min read',
     tags: ['Nonprofit', 'Executive Transition', 'Leadership', 'Career'],
     excerpt: 'Lots of extraordinary people are looking for their next opportunity in nonprofit leadership right now. Here are five things to focus on as you search.',
