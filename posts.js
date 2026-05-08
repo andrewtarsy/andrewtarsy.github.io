@@ -10,7 +10,7 @@ var EMBLEM_POSTS = [{
   },
   {
     slug: 'five-things-nonprofit-leadership-search',
-    title: 'Five Things to Focus On in Your Nonprofit Leadership Search',
+    title: '5 Things to Focus On in Your Nonprofit Leadership Search',
     date: '2025-09-01',
     dateDisplay: 'September 1, 2025',
     readTime: '3 min read',
@@ -22,7 +22,8 @@ var EMBLEM_POSTS = [{
 <p><strong>3. Write about what you have learned and done and how it is relevant to the future</strong> in the direction you are seeking to go. Of course it has a self-serving element, but so does breathing. Write to inform others, to advance the idea or effort that is your subject, and yes, to show an onlooker that your mind is active, your skill at communicating is real, your experience is valuable. Could be a LinkedIn post, a blog, a guest piece somewhere. Just get it out there. Super helpful for those who are learning about you and your value.</p>
 <p><strong>4. Find the nexus to revenue.</strong> In whatever you have done, you are best served if you can articulate your experience with managing a fiscal element of the work and soliciting funds to support it. If you have not had this exposure in your work yet, seek it out, as it will matter to those who look at you for your next big thing.</p>
 <p><strong>5. Be kind to yourself.</strong> This is an uncommon time. The world may not get as better as we would like, but it will not stay the same forever either. If you need to pivot now or move to something you would have passed on before, that is ok. You have your reasons. It does not mean the dream is over. Living to fight another day is more than just fine. It is admirable.</p>
-<p>Trust in your value. And never stop adding to it. The world needs you to keep on growing.</p>`
+<p>Trust in your value. And never stop adding to it. The world needs you to keep on growing.</p>
+<p>Know someone who would benefit from coaching and connecting in this spirit? Reach me at <a href="mailto:andy@emblemstrategic.com">andy@emblemstrategic.com</a> or through the <a href="https://emblemstrategic.com/#contact">contact page</a> at emblemstrategic.com.</p>`
   },
   {
     slug: "socap23-speed-of-trust",
