@@ -1,4 +1,4 @@
-var EMBLEM_POSTS = [{
+var EMBLEM_POSTS = [
   {
     slug: "executive-coaching-three-truths",
     title: "Three Things I Know to Be True About Executive Coaching",
