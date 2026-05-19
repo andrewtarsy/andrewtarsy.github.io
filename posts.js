@@ -1,4 +1,38 @@
 var EMBLEM_POSTS = [{
+  {
+    slug: "executive-coaching-three-truths",
+    title: "Three Things I Know to Be True About Executive Coaching",
+    subtitle: "Lessons from coaching nonprofit executives across education, housing, higher ed, and more.",
+    date: "2026-05-19",
+    dateDisplay: "May 19, 2026",
+    readTime: "4 min read",
+    tags: ["Leadership", "Executive Coaching", "Nonprofit", "Values"],
+    excerpt: "I have had a phenomenal experience coaching national and regional nonprofit executives. Three things have been universally true across every client and every field.",
+    body: `<p>I have had a phenomenal experience coaching national and regional nonprofit executives across a wide range of fields &mdash; education, housing, human-centered design, higher education, and more. Three things have been universally true.</p>
+
+<h2>1. It Is Lonely at the Top</h2>
+
+<p>Being chief is incredibly isolating. I know this from listening to clients and from having done that job multiple times myself. Before all of the other important value I can hopefully deliver as a coach, I am providing an isolated, high-performance professional with a thought partner and with a listener who is not a part of her or his organization. That is priceless, and it is irreplaceable. No board member, no direct report, no spouse can fully occupy that role. A good coach can.</p>
+
+<h2>2. Nobody Tells You the Truth</h2>
+
+<p>Nobody tells the chief the truth. Ron Heifetz says leadership is disappointing people at a rate they can absorb. Executive coaching works on a similar principle: finding a way to reveal hard truths to a leader in a form they are ready to take in and make productive is the core of the work. It is rarely the same way twice. I have had coaches who pushed me close to my own limit for absorbing their toughness. That experience informs how I work.</p>
+
+<p>Coaching requires a level of touch and judgment that goes far beyond any academic training or framework. The work has to bring a client closer to hard truths. That is not comfortable. It is essential.</p>
+
+<h2>3. Dramatic Improvement Is Always Possible</h2>
+
+<p>Some people mistake the process of having a coach for a kind of glacial, quiet support. That probably describes the baseline accurately. It is hardly an accurate description of the work.</p>
+
+<p>Clients take new frameworks and techniques, new insights, new confidence, constructive feedback, and a just-in-time extra set of eyes. They quite often demonstrate rapid growth and tangible, short-term results. The improvement is real, it is measurable, and it often comes faster than anyone expected.</p>
+
+<h2>A Word to Board Chairs and Chiefs</h2>
+
+<p>If you are a board chair, I would implore you to insist on a budget line for executive coaching in support of your chief executive, and for other key organizational leaders as well. If you are the chief, put it in the budget. Make the case deliberately so you can secure the funds you need to secure the coach you need.</p>
+
+<p>More on the coaching work I do is right here on the <a href="/index.html#coaching">Emblem site</a>.</p>`
+  },
+
     slug: "labels-change-priorities-too",
     title: "Labels Change. Priorities Too. The Work of Business Leaders Doesn't.",
     date: "2026-05-07",
